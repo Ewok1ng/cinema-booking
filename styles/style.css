@@ -25,14 +25,40 @@ a {
     padding: 0 15px;
 }
 
+
+
 .header {
-    margin-top: 30px;
+    min-height: 100vh;
+    background-image: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%),
+        url('../images/header-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
 }
 
 .header__inner {
+    padding-top: 30px;
+}
+
+.header__top {
+    margin-bottom: 90px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.header__content {
+    margin-bottom: 47px;
+
+    display: flex;    
+}
+
+.header__details {
+    margin-bottom: 60px;
+
+    display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -45,6 +71,8 @@ a {
     
     display: inline-block;
 }
+
+
 
 .menu {
     margin-right: auto;
@@ -66,6 +94,8 @@ a {
     margin-right: 0;
 }
 
+
+
 .user {
     display: flex;
     align-items: center;
@@ -85,3 +115,221 @@ a {
 
     cursor: pointer;
 }
+
+
+
+.film {
+    max-width: 570px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.film__subtitle {
+    margin-bottom: 11px;
+
+    font-size: 24px;
+    line-height: 1.5;
+
+    opacity: .5;
+}
+
+.film__title {
+    margin-bottom: 23px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.film__description {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+
+.trailer {
+    margin: auto;
+
+    display: block;
+}
+
+
+.clock {
+    margin-right: 34px;
+
+    display: flex;
+    align-items: center;
+}
+
+.clock__duration {
+    margin-left: 14px;
+
+    display: inline-block;
+}
+
+.imdb {
+    display: flex;
+    align-items: center;
+}
+
+.imdb__rating {
+    margin-left: 12px;
+
+    display: inline-block;
+}
+
+.imdb__rating-current {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+
+.session {
+    padding: 46px 0 64px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.date__item {
+    padding: 9px 29px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition: background-color .2s ease-in-out, color .2s ease-in-out;
+}
+
+.date__item + .date__item {
+    margin-left: 15px;
+}
+
+.date__item:hover,
+.date__item--active {
+    color: #621402;
+    background-color: #FE8E05;
+    
+}
+
+.date__title {
+    margin-bottom: 20px;
+}
+
+.date__item-month {
+    line-height: 19px;
+}
+
+.date__item-day {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.date__item-week {
+    font-size: 19px;
+    line-height: 22px;
+}
+
+.cinema__title,
+.time__title {
+    margin-bottom: 33px;
+}
+
+.cinema__select {
+    width: 470px;
+}
+
+.time__select {
+    width: 110px;
+}
+
+.select {
+    position: relative;
+}
+
+.select__trigger {
+    position: relative;
+
+    cursor: pointer;
+}
+
+.select__active-option {
+    padding: 8px;
+
+    background-color: rgba(255, 255, 255, 0.15);
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+
+.select__arrow {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    z-index: 1;
+
+    transform: translateY(-50%);
+}
+
+.select__arrow--active {
+    transform: translateY(-50%) rotateX(180deg);
+}
+
+
+.select__options {   
+    position: absolute;
+    top: 41px;
+    left: 0;
+    right: 0;
+    
+    display: flex;
+    flex-direction: column;
+
+    background-color: #621402;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+
+    overflow: hidden;
+    display: none;
+}
+
+.select__options--active {
+    overflow: auto;
+    display: flex;
+}
+
+.select__option {
+    padding: 8px;
+    cursor: pointer;
+
+    transition: background-color .15s ease-in-out;
+}
+
+.select__option:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.select__option + .select__option {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+

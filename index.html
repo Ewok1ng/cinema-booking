@@ -5,9 +5,12 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Online Cinema</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet"> 
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="styles/reset.css" />
 		<link rel="stylesheet" href="styles/style.css" />
 	</head>
@@ -15,43 +18,156 @@
 		<header class="header">
 			<div class="container">
 				<div class="header__inner">
-					<a class="logo" href="/">
-						<img class="logo__image" src="./images/logo.svg" alt="Logo" />
-					</a>
-					<nav class="menu">
-						<ul class="menu__list">
-							<li class="menu__list-item">
-								<a class="menu__list-link" href="#">Главная</a>
-							</li>
+					<div class="header__top">
+						<a class="logo" href="/">
+							<img class="logo__image" src="./images/logo.svg" alt="Logo" />
+						</a>
+						<nav class="menu">
+							<ul class="menu__list">
+								<li class="menu__list-item">
+									<a class="menu__list-link" href="#">Главная</a>
+								</li>
 
-							<li class="menu__list-item">
-								<a class="menu__list-link" href="#">Фильмы</a>
-							</li>
+								<li class="menu__list-item">
+									<a class="menu__list-link" href="#">Фильмы</a>
+								</li>
 
-							<li class="menu__list-item">
-								<a class="menu__list-link" href="#">Кинотеатры</a>
-							</li>
+								<li class="menu__list-item">
+									<a class="menu__list-link" href="#">Кинотеатры</a>
+								</li>
 
-							<li class="menu__list-item">
-								<a class="menu__list-link" href="#">События</a>
-							</li>
+								<li class="menu__list-item">
+									<a class="menu__list-link" href="#">События</a>
+								</li>
 
-							<li class="menu__list-item">
-								<a class="menu__list-link" href="#">Поддержка</a>
-							</li>
-						</ul>
-					</nav>
-					<div class="user">
-						<span class="user__text">Привет, пользователь!</span>
-						<img
-							class="user__avatar"
-							src="./images/user-avatar.jpg"
-							alt="User avatar"
-						/>
+								<li class="menu__list-item">
+									<a class="menu__list-link" href="#">Поддержка</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="user">
+							<span class="user__text">Привет, пользователь!</span>
+							<img
+								class="user__avatar"
+								src="./images/user-avatar.jpg"
+								alt="User avatar"
+							/>
+						</div>
+					</div>
+
+					<div class="header__content">
+						<div class="film">
+							<h2 class="film__subtitle">Avengers: Infinity War</h2>
+							<h1 class="film__title">Мстители: война бесконечности</h1>
+							<p class="film__description">
+								Пока Мстители и их союзники продолжают защищать мир от различных
+								опасностей, с которыми не смог бы справиться один супергерой,
+								новая угроза возникает из космоса: Танос. Межгалактический тиран
+								преследует цель собрать все шесть Камней Бесконечности - артефакты
+								невероятной силы, с помощью которых можно менять реальность по
+								своему желанию. Всё, с чем Мстители сталкивались ранее, вело к
+								этому моменту – судьба Земли никогда ещё не была столь
+								неопределённой.
+							</p>
+						</div>
+						<a class="trailer" href="#">
+							<svg class="trailer__icon" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<circle cx="50" cy="50" r="50" fill="white"/>
+								<g clip-path="url(#clip0)">
+								<path d="M43.0758 30.0033C39.3071 27.8416 36.2518 29.6125 36.2518 33.9556V66.0059C36.2518 70.3533 39.3071 72.1219 43.0758 69.9623L71.0893 53.8967C74.8592 51.7342 74.8592 48.2306 71.0893 46.0686L43.0758 30.0033Z" fill="#F20D01"/>
+								</g>
+								<defs>
+								<clipPath id="clip0">
+								<rect width="41.8013" height="41.8013" fill="white" transform="translate(34.1837 29.0816)"/>
+								</clipPath>
+								</defs>
+							</svg>
+						</a>
+					</div>
+
+					<div class="header__details">
+						<div class="clock">
+							<svg class="clock__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M13.5631 11.7661L10.7746 9.67465V5.41442C10.7746 4.98606 10.4283 4.63981 9.99995 4.63981C9.57159 4.63981 9.22534 4.98606 9.22534 5.41442V10.062C9.22534 10.306 9.33999 10.5361 9.53519 10.6817L12.6336 13.0055C12.773 13.11 12.9357 13.1604 13.0975 13.1604C13.3338 13.1604 13.5662 13.0543 13.718 12.8498C13.9752 12.5081 13.9055 12.0225 13.5631 11.7661Z" fill="white"/>
+								<path d="M10 0C4.48566 0 0 4.48566 0 10C0 15.5143 4.48566 20 10 20C15.5143 20 20 15.5143 20 10C20 4.48566 15.5143 0 10 0ZM10 18.4508C5.34082 18.4508 1.54918 14.6592 1.54918 10C1.54918 5.34082 5.34082 1.54918 10 1.54918C14.66 1.54918 18.4508 5.34082 18.4508 10C18.4508 14.6592 14.6592 18.4508 10 18.4508Z" fill="white"/>
+							</svg>
+							<span class="clock__duration">240 мин.</span>
+						</div>
+						<div class="imdb">
+							<svg class="imdb__icon" width="30" height="30" xmlns="http://www.w3.org/2000/svg" aria-label="IMDb" role="img" viewBox="0 0 512 512">
+								<rect width="512" height="512" rx="15%" fill="#f5c518"/>
+								<path d="M104 328V184H64v144zM189 184l-9 67-5-36-5-31h-50v144h34v-95l14 95h25l13-97v97h34V184zM256 328V184h62c15 0 26 11 26 25v94c0 14-11 25-26 25zm47-118l-9-1v94c5 0 9-1 10-3 2-2 2-8 2-18v-56-12l-3-4zM419 220h3c14 0 26 11 26 25v58c0 14-12 25-26 25h-3c-8 0-16-4-21-11l-2 9h-36V184h38v46c5-6 13-10 21-10zm-8 70v-34l-1-11c-1-2-4-3-6-3s-5 1-6 3v57c1 2 4 3 6 3s6-1 6-3l1-12z"/>
+							</svg>
+							<span class="imdb__rating">
+								<strong class="imdb__rating-current">9.2</strong> / 10
+							</span>
+						</div>
+					</div>
+
+					<div class="session">
+						<div class="session__date">
+							<h4 class="session__title date__title">Дата</h4>
+							<div class="date">
+								<div class="date__item">
+									<span class="date__item-month">АПР</span>
+									<span class="date__item-day">27</span>
+									<span class="date__item-week">пт</span>
+								</div>
+								<div class="date__item date__item--active">
+									<span class="date__item-month">АПР</span>
+									<span class="date__item-day">28</span>
+									<span class="date__item-week">сб</span>
+								</div>
+								<div class="date__item">
+									<span class="date__item-month">АПР</span>
+									<span class="date__item-day">29</span>
+									<span class="date__item-week">вс</span>
+								</div>
+								<div class="date__item">
+									<span class="date__item-month">АПР</span>
+									<span class="date__item-day">30</span>
+									<span class="date__item-week">пн</span>
+								</div>
+							</div>
+						</div>
+						<div class="session__cinema">
+							<h4 class="session__title cinema__title">Кинотеатр</h4>
+							<div class="select cinema__select">
+								<div class="select__trigger">
+									<div class="select__active-option">Октябрь, ул. Калужская 28</div>
+									<svg class="select__arrow" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M14.75 1L7.75 8L0.75 0.999999" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+									</svg>
+								</div>
+								<div class="select__options">
+									<span class="select__option">Option 1</span>
+									<span class="select__option">Option 2</span>
+									<span class="select__option">Option 3</span>
+									<span class="select__option">Option 4</span>
+								</div>
+							</div>
+						</div>
+						<div class="session__time">
+							<h4 class="session__title time__title">Время</h4>
+							<div class="select time__select">
+								<div class="select__trigger">
+									<div class="select__active-option">23:00</div>
+									<svg class="select__arrow" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M14.75 1L7.75 8L0.75 0.999999" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+									</svg>
+								</div>
+								<div class="select__options">
+									<span class="select__option">10:00</span>
+									<span class="select__option">12:00</span>
+									<span class="select__option">13:45</span>
+									<span class="select__option">15:00</span>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</header>
-		<script src="script.js"></script>
+		<script src="scripts/script.js"></script>
 	</body>
 </html>
