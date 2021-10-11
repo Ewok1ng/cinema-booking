@@ -2,7 +2,11 @@
 
 const dateItem = document.querySelectorAll('.date__item');
 const selectTrigger = document.querySelectorAll('.select__trigger');
+const schemaSeats = document.querySelector('.schema__seats');
+const totalPrice = document.querySelector('.order__total-price');
+const orderButton = document.querySelector('.order__button');
 
+const TICKET_PRICE = 250;
 
 dateItem.forEach((item) => {
     item.addEventListener('click', (e) => {
@@ -32,4 +36,32 @@ selectTrigger.forEach((elem) => {
             })
         }
     });
+})
+
+schemaSeats.addEventListener('click', (e) => {
+    const seat = e.target.closest('.schema__seats-item');
+    
+    if (seat) {
+        if (!seat.classList.contains('schema__seats-item--booked')) {
+            seat.classList.toggle('schema__seats-item--selected');
+        }
+    }
+    
+
+    let selectedSeats = document.querySelectorAll('.schema__seats-item--selected').length;
+
+    totalPrice.textContent = selectedSeats *  TICKET_PRICE;
+    
+})
+
+orderButton.addEventListener('click', () => {
+    const selectedSeats = document.querySelectorAll('.schema__seats-item--selected');
+
+    selectedSeats.forEach((seat) => {
+        seat.classList.remove('schema__seats-item--selected');
+        seat.classList.add('schema__seats-item--booked');
+        totalPrice.textContent = 0;
+    })
+        alert('Оплата прошла успешно');
+
 })
