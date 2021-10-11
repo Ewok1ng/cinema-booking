@@ -11,6 +11,7 @@
 			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
 			rel="stylesheet"
 		/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
 		<link rel="stylesheet" href="styles/reset.css" />
 		<link rel="stylesheet" href="styles/style.css" />
 	</head>
@@ -53,6 +54,11 @@
 								alt="User avatar"
 							/>
 						</div>
+						<button class="menu-burger">
+							<span class="menu-burger__line menu-burger__line--top"></span>
+							<span class="menu-burger__line menu-burger__line--center"></span>
+							<span class="menu-burger__line menu-burger__line--bottom"></span>
+						</button>
 					</div>
 
 					<div class="header__content">
@@ -70,7 +76,7 @@
 								неопределённой.
 							</p>
 						</div>
-						<a class="trailer" href="#">
+						<a class="trailer" data-fancybox href="https://www.youtube.com/watch?v=UsnDPok1ZOU">
 							<svg class="trailer__icon" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<circle cx="50" cy="50" r="50" fill="white"/>
 								<g clip-path="url(#clip0)">
@@ -157,10 +163,10 @@
 									</svg>
 								</div>
 								<div class="select__options">
-									<span class="select__option">10:00</span>
-									<span class="select__option">12:00</span>
-									<span class="select__option">13:45</span>
-									<span class="select__option">15:00</span>
+									<span class="select__option">Time 1</span>
+									<span class="select__option">Time 2</span>
+									<span class="select__option">Time 3</span>
+									<span class="select__option">Time 4</span>
 								</div>
 							</div>
 						</div>
@@ -172,7 +178,7 @@
 			<div class="container">
 				<div class="schema__inner">
 					<div class="schema__screen">
-						<svg width="1018" height="77" viewBox="0 0 1018 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<svg viewBox="0 0 1018 77" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M52 77L125.04 10H892.96L966 77H52Z" fill="url(#paint0_linear)"/>
 							<line y1="5" x2="1018" y2="5" stroke="black" stroke-opacity="0.39" stroke-width="10"/>
 							<defs>
@@ -801,6 +807,7 @@
 				</div>
 			</div>
 		</div>
+		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 		<script src="scripts/script.js"></script>
 	</body>
 </html>

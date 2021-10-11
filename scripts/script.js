@@ -1,5 +1,7 @@
 "use strict"
 
+const headerTop = document.querySelector('.header__top');
+const burgerMenu = document.querySelector('.menu-burger');
 const dateItem = document.querySelectorAll('.date__item');
 const selectTrigger = document.querySelectorAll('.select__trigger');
 const schemaSeats = document.querySelector('.schema__seats');
@@ -7,6 +9,20 @@ const totalPrice = document.querySelector('.order__total-price');
 const orderButton = document.querySelector('.order__button');
 
 const TICKET_PRICE = 250;
+
+burgerMenu.addEventListener('click', (e) => {
+    e.currentTarget.classList.toggle('menu-burger--active');
+    headerTop.classList.toggle('header__top--active');
+
+    if (headerTop.classList.contains('header__top--active')) {
+        document.body.style.overflowY = 'hidden';
+    } else {
+        document.body.style.overflowY = 'auto';
+
+    }
+    console.log(document.body)
+})
+
 
 dateItem.forEach((item) => {
     item.addEventListener('click', (e) => {
