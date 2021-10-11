@@ -1,6 +1,6 @@
 "use strict"
 
-const headerTop = document.querySelector('.header__top');
+const menuWrapper = document.querySelector('.menu__wrapper');
 const burgerMenu = document.querySelector('.menu-burger');
 const dateItem = document.querySelectorAll('.date__item');
 const selectTrigger = document.querySelectorAll('.select__trigger');
@@ -12,9 +12,9 @@ const TICKET_PRICE = 250;
 
 burgerMenu.addEventListener('click', (e) => {
     e.currentTarget.classList.toggle('menu-burger--active');
-    headerTop.classList.toggle('header__top--active');
+    menuWrapper.classList.toggle('menu__wrapper--active');
 
-    if (headerTop.classList.contains('header__top--active')) {
+    if (menuWrapper.classList.contains('menu__wrapper--active')) {
         document.body.style.overflowY = 'hidden';
     } else {
         document.body.style.overflowY = 'auto';
